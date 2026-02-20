@@ -35,3 +35,16 @@ Certifique-se de ter o JDK 17 ou superior instalado.
 
 O servidor iniciará em:
 
+http://localhost:8080/usuarios
+
+
+---
+
+### 2. Frontend (Web)
+
+Abra o arquivo `index.html` diretamente no seu navegador  
+ou utilize a extensão **Live Server** do VS Code.
+
+Preencha os campos e clique em **Enviar** para ver a integração em tempo real.
+
+

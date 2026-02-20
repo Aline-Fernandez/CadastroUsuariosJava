@@ -1,26 +1,16 @@
-# 💻 Prática Java
+# 📌 Projeto: Cadastro de Usuários (Java)
 
-Repositório criado para armazenar meus projetos de estudo e prática utilizando Java.
+Projeto simples desenvolvido para praticar conceitos básicos de **Java**, **orientação a objetos** e organização de código.
 
-Aqui organizo pequenos projetos com foco em:
+## 🚀 Objetivo
 
-- Lógica de programação
-- Orientação a Objetos
-- Boas práticas
-- Estruturação de código
-- Versionamento com Git
+Simular um sistema simples de cadastro de usuários utilizando:
 
----
+- Java 25
+- Programação Orientada a Objetos
+- Organização em classes (Model e Service)
 
-## 📂 Projetos
-
-### 📌 1. Cadastro de Usuários
-Projeto simples para praticar:
-- Criação de classes
-- Separação entre Model e Service
-- Estrutura básica de aplicação Java
-
-📁 pasta: `cadastro-usuarios`
+Este projeto faz parte dos meus estudos e prática para evolução como desenvolvedora Java.
 
 ---
 
@@ -32,16 +22,25 @@ Projeto simples para praticar:
 
 ---
 
-## 🎯 Objetivo
+## 📂 Estrutura do Projeto
 
-Evoluir gradualmente em Java, construindo projetos cada vez mais completos, incluindo futuramente:
+cadastro-usuarios/
+- Main.java
+- Usuario.java
+- UsuarioService.java
 
-- Estrutura com pacotes
-- Coleções (ArrayList, Map)
-- Tratamento de exceções
-- API REST com Quarkus
-- Integração com banco de dados
+- **Main.java** → Classe principal para execução
+- **Usuario.java** → Classe modelo representando o usuário
+- **UsuarioService.java** → Classe responsável pelas regras de negócio
 
 ---
 
-👩‍💻 Repositório de estudos em constante evolução.
+## 📚 Conceitos praticados
+
+- Criação de classes
+- Encapsulamento
+- Métodos
+- Separação de responsabilidades
+- Versionamento com Git
+
+---

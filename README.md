@@ -1,46 +1,37 @@
-# 📌 Projeto: Cadastro de Usuários (Java)
+# 🚀 API de Cadastro de Usuários (Spring Boot + Vanilla JS)
 
-Projeto simples desenvolvido para praticar conceitos básicos de **Java**, **orientação a objetos** e organização de código.
-
-## 🚀 Objetivo
-
-Simular um sistema simples de cadastro de usuários utilizando:
-
-- Java 25
-- Programação Orientada a Objetos
-- Organização em classes (Model e Service)
-
-Este projeto faz parte dos meus estudos e prática para evolução como desenvolvedora Java.
+Este projeto é uma aplicação Full Stack completa, que permite o cadastro e a listagem de usuários em tempo real. O sistema utiliza um backend robusto em Java e um frontend leve em HTML/JS.
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- Java 25
-- Git
-- GitHub
+**Backend:** Java 17+ (Compatível com Java 25), Spring Boot 3.2.2.  
 
----
+**Frontend:** HTML5, CSS3, JavaScript (Fetch API).  
 
-## 📂 Estrutura do Projeto
-
-cadastro-usuarios/
-- Main.java
-- Usuario.java
-- UsuarioService.java
-
-- **Main.java** → Classe principal para execução
-- **Usuario.java** → Classe modelo representando o usuário
-- **UsuarioService.java** → Classe responsável pelas regras de negócio
+**Gerenciamento de Dependências:** Maven.
 
 ---
 
-## 📚 Conceitos praticados
+## 🏗️ Estrutura do Projeto
 
-- Criação de classes
-- Encapsulamento
-- Métodos
-- Separação de responsabilidades
-- Versionamento com Git
+O projeto segue a estrutura padrão do Maven para garantir a organização do código:
+
+- `src/main/java`: Contém a lógica do backend (Controllers, Services e Models).  
+- `index.html`: Interface do usuário que se comunica com a API.  
+- `pom.xml`: Configurações e dependências do projeto.
 
 ---
+
+## 🚀 Como Rodar a Aplicação
+
+### 1. Backend (Java)
+
+Certifique-se de ter o JDK 17 ou superior instalado.
+
+1. Abra a pasta do projeto no VS Code.  
+2. Navegue até `src/main/java/Main.java` e clique em **Run**.  
+
+O servidor iniciará em:
+

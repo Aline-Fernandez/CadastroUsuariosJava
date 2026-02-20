@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; background-color: #f4f4f9; }
+        h2 { color: #333; }
+        .form-group { margin-bottom: 15px; }
+        input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #218838; }
+        ul { list-style: none; padding: 0; margin-top: 20px; }
+        li { background: white; margin-bottom: 5px; padding: 10px; border-radius: 4px; border-left: 5px solid #28a745; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <h2>Cadastrar Usuário</h2>
+    <div class="form-group">
+        <input type="text" id="nome" placeholder="Nome completo">
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" placeholder="E-mail">
+    </div>
+    <button onclick="cadastrar()">Salvar no Java</button>
+
+    <h2>Usuários no Sistema</h2>
+    <ul id="listaUsuarios"></ul>
+
+    <script>
+        const API_URL = "http://localhost:8080/usuarios";
+
+        // Função para enviar dados para o Backend (POST)
+        async function cadastrar() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+
+            const response = await fetch(API_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nome, email })
+            });
+
+            if (response.ok) {
+                alert("Usuário enviado para o Backend!");
+                document.getElementById('nome').value = '';
+                document.getElementById('email').value = '';
+                listar(); // Atualiza a lista na tela
+            }
+        }
+
+        // Função para buscar dados do Backend (GET)
+        async function listar() {
+            const response = await fetch(API_URL);
+            const usuarios = await response.json();
+            
+            const lista = document.getElementById('listaUsuarios');
+            lista.innerHTML = '';
+            
+            usuarios.forEach(u => {
+                const item = document.createElement('li');
+                item.textContent = `Nome: ${u.nome} | Email: ${u.email}`;
+                lista.appendChild(item);
+            });
+        }
+
+        // Carregar a lista assim que abrir a página
+        listar();
+    </script>
+</body>
+</html>

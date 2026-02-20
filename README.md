@@ -31,11 +31,13 @@ O projeto segue a estrutura padrão do Maven para garantir a organização do c�
 Certifique-se de ter o JDK 17 ou superior instalado.
 
 1. Abra a pasta do projeto no VS Code.  
-2. Navegue até `src/main/java/Main.java` e clique em **Run**.  
-
-O servidor iniciará em:
+2. Navegue até `src/main/java/Main.java` e clique em **Run**.
+   
+O servidor iniciará localmente em:
 
 http://localhost:8080/usuarios
+
+⚠️ Esta URL funciona apenas após executar o backend na sua máquina.
 
 
 ---

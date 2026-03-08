@@ -2,9 +2,11 @@
 
 <br>
 
+# 🚀 API de Cadastro de Usuários (Spring Boot + Vanilla JS)
+
 <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" /> <img src="https://img.shields.io/badge/Backend-Java%20Spring-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" /> <img src="https://img.shields.io/badge/Frontend-Vanilla%20JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
 
-# 🚀 API de Cadastro de Usuários (Spring Boot + Vanilla JS)
+
 
 Este projeto é uma aplicação **Full Stack** completa, que permite o cadastro e a listagem de usuários em tempo real. O sistema utiliza um backend robusto em Java com Spring Boot e um frontend leve construído com tecnologias web puras.
 
